@@ -1,2 +1,2 @@
 # mm
-homework1:mm/fight.py
+homework1:mm/python/fight.py
