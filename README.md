@@ -1,2 +1,2 @@
 # mm
-mm test
+homework1:mm/fight.py
