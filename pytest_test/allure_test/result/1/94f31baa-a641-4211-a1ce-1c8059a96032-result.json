@@ -1,0 +1,40 @@
+{
+  "name": "test_failure",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert False",
+    "trace": "def test_failure():\n>       assert False\nE       assert False\n\nallure_test.py:11: AssertionError"
+  },
+  "start": 1597315743663,
+  "stop": 1597315743664,
+  "uuid": "7b6d3014-2885-4669-9e70-9def6970b2f9",
+  "historyId": "4a5ad7e2ec8f6dacd70cce1260ec2c28",
+  "testCaseId": "28ca62115ed74291723c5840cda55ee9",
+  "fullName": "allure_test#test_failure",
+  "labels": [
+    {
+      "name": "suite",
+      "value": "allure_test"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-NO52HB5"
+    },
+    {
+      "name": "thread",
+      "value": "17660-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "allure_test"
+    }
+  ]
+}

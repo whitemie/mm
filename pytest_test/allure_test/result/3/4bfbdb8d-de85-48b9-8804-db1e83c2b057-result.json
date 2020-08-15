@@ -1,0 +1,90 @@
+{
+  "name": "test_login_failure",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert '1' == 1",
+    "trace": "self = <pytest_test.allure_test.allure_test.TestLogin object at 0x000002BB7E7DE0A0>\n\n    @allure.story(\"密码缺失\")\n    @allure.link(\"http://www.baidu.com\")\n    def test_login_failure(self):\n        with allure.step(\"点击用户名\"):\n            print(\"输入用户名\")\n        with allure.step(\"点击密码\"):\n            print(\"输入密码\")\n        print(\"点击登录\")\n        with allure.step(\"点击登录之后登录失败\"):\n>           assert '1' == 1\nE           AssertionError: assert '1' == 1\n\nallure_test.py:29: AssertionError"
+  },
+  "steps": [
+    {
+      "name": "点击用户名",
+      "status": "passed",
+      "start": 1597318777123,
+      "stop": 1597318777124
+    },
+    {
+      "name": "点击密码",
+      "status": "passed",
+      "start": 1597318777124,
+      "stop": 1597318777124
+    },
+    {
+      "name": "点击登录之后登录失败",
+      "status": "failed",
+      "statusDetails": {
+        "message": "AssertionError: assert '1' == 1\n",
+        "trace": "  File \"D:\\gittest\\mm\\pytest_test\\allure_test\\allure_test.py\", line 29, in test_login_failure\n    assert '1' == 1\n"
+      },
+      "start": 1597318777124,
+      "stop": 1597318777124
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "8037de38-8008-4346-8faa-5bf3587da16a-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "start": 1597318777123,
+  "stop": 1597318777125,
+  "uuid": "beddce2c-ebe0-46c5-b546-8d47dd83ef2c",
+  "historyId": "4eeaf91a33abbc50f0a7de8d49912ba8",
+  "testCaseId": "0314aaf9be91b22d66b586806bf8c89d",
+  "fullName": "allure_test.TestLogin#test_login_failure",
+  "labels": [
+    {
+      "name": "story",
+      "value": "密码缺失"
+    },
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "suite",
+      "value": "allure_test"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-NO52HB5"
+    },
+    {
+      "name": "thread",
+      "value": "11444-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "allure_test"
+    }
+  ],
+  "links": [
+    {
+      "type": "link",
+      "url": "http://www.baidu.com",
+      "name": "http://www.baidu.com"
+    }
+  ]
+}

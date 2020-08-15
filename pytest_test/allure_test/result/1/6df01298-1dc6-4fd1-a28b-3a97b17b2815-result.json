@@ -1,0 +1,40 @@
+{
+  "name": "test_broken",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Exception: oops",
+    "trace": "def test_broken():\n>       raise Exception('oops')\nE       Exception: oops\n\nallure_test.py:19: Exception"
+  },
+  "start": 1597315743957,
+  "stop": 1597315743957,
+  "uuid": "88443d0a-142c-466f-bf83-e1b8b23aafc0",
+  "historyId": "7d2eea24e49ade3dcf5517ddac71aa7b",
+  "testCaseId": "83b9f967d3457511a6ff0636f3290376",
+  "fullName": "allure_test#test_broken",
+  "labels": [
+    {
+      "name": "suite",
+      "value": "allure_test"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-NO52HB5"
+    },
+    {
+      "name": "thread",
+      "value": "17660-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "allure_test"
+    }
+  ]
+}

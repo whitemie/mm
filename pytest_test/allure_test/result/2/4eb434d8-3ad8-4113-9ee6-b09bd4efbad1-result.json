@@ -1,0 +1,55 @@
+{
+  "name": "test_login_success",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "23de3cae-f901-4cff-a62d-9470bd71f507-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "start": 1597317525671,
+  "stop": 1597317525673,
+  "uuid": "b29103a7-72f7-4714-a39f-e206c09bbc23",
+  "historyId": "87604de1f71e4c4597738a7bb816e8ff",
+  "testCaseId": "8f065721d68d54ad39febcfb7445d2ac",
+  "fullName": "allure_test.TestLogin#test_login_success",
+  "labels": [
+    {
+      "name": "story",
+      "value": "登陆成功"
+    },
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "suite",
+      "value": "allure_test"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-NO52HB5"
+    },
+    {
+      "name": "thread",
+      "value": "23940-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "allure_test"
+    }
+  ]
+}

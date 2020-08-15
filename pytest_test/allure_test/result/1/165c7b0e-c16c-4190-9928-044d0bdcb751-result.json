@@ -1,0 +1,36 @@
+{
+  "name": "test_success",
+  "status": "passed",
+  "start": 1597315743618,
+  "stop": 1597315743618,
+  "uuid": "8cf72552-dbfb-49ea-95dd-1e072bd9b60c",
+  "historyId": "31039809f19e9a3bccc646cc205c26ad",
+  "testCaseId": "c93c940f9a75043d616a93a6c5511f00",
+  "fullName": "allure_test#test_success",
+  "labels": [
+    {
+      "name": "suite",
+      "value": "allure_test"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-NO52HB5"
+    },
+    {
+      "name": "thread",
+      "value": "17660-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "allure_test"
+    }
+  ]
+}

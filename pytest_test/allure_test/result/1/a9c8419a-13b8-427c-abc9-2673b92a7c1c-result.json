@@ -1,0 +1,40 @@
+{
+  "name": "test_skip",
+  "status": "skipped",
+  "statusDetails": {
+    "message": "Skipped: for a reason",
+    "trace": "('D:\\\\gittest\\\\mm\\\\pytest_test\\\\allure_test\\\\allure_test.py', 15, 'Skipped: for a reason')"
+  },
+  "start": 1597315743918,
+  "stop": 1597315743919,
+  "uuid": "8bd8492d-8226-4f48-bede-bcf6bc1eeb9f",
+  "historyId": "cea132766982c253a281a71c92e13697",
+  "testCaseId": "0f8bb0c5c0f2366395cc1ee7824ca656",
+  "fullName": "allure_test#test_skip",
+  "labels": [
+    {
+      "name": "suite",
+      "value": "allure_test"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-NO52HB5"
+    },
+    {
+      "name": "thread",
+      "value": "17660-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "allure_test"
+    }
+  ]
+}

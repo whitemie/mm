@@ -1,0 +1,83 @@
+{
+  "name": "test_login_failure",
+  "status": "failed",
+  "statusDetails": {
+    "message": "AssertionError: assert '1' == 1",
+    "trace": "self = <pytest_test.allure_test.allure_test.TestLogin object at 0x000001B96178BBB0>\n\n    @allure.story(\"密码缺失\")\n    def test_login_failure(self):\n        with allure.step(\"点击用户名\"):\n            print(\"输入用户名\")\n        with allure.step(\"点击密码\"):\n            print(\"输入密码\")\n        print(\"点击登录\")\n        with allure.step(\"点击登录之后登录失败\"):\n>           assert '1' == 1\nE           AssertionError: assert '1' == 1\n\nallure_test.py:28: AssertionError"
+  },
+  "steps": [
+    {
+      "name": "点击用户名",
+      "status": "passed",
+      "start": 1597318557630,
+      "stop": 1597318557630
+    },
+    {
+      "name": "点击密码",
+      "status": "passed",
+      "start": 1597318557630,
+      "stop": 1597318557630
+    },
+    {
+      "name": "点击登录之后登录失败",
+      "status": "failed",
+      "statusDetails": {
+        "message": "AssertionError: assert '1' == 1\n",
+        "trace": "  File \"D:\\gittest\\mm\\pytest_test\\allure_test\\allure_test.py\", line 28, in test_login_failure\n    assert '1' == 1\n"
+      },
+      "start": 1597318557631,
+      "stop": 1597318557631
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "2a258648-19dc-40ba-95bb-26de141914d8-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "start": 1597318557630,
+  "stop": 1597318557632,
+  "uuid": "8c16d46b-a184-4770-9b2a-189abec20313",
+  "historyId": "4eeaf91a33abbc50f0a7de8d49912ba8",
+  "testCaseId": "0314aaf9be91b22d66b586806bf8c89d",
+  "fullName": "allure_test.TestLogin#test_login_failure",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "story",
+      "value": "密码缺失"
+    },
+    {
+      "name": "suite",
+      "value": "allure_test"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-NO52HB5"
+    },
+    {
+      "name": "thread",
+      "value": "31016-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "allure_test"
+    }
+  ]
+}

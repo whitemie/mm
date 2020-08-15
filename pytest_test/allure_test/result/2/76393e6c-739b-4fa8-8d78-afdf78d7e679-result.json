@@ -1,0 +1,55 @@
+{
+  "name": "test_login_failure_a",
+  "status": "passed",
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "f19f6fd9-9dc8-4285-b658-86e38a388360-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "start": 1597317526132,
+  "stop": 1597317526133,
+  "uuid": "916e76e0-9b2c-47eb-9d9b-1103de5aac8b",
+  "historyId": "7e0539d166f93f16706a6171c2995852",
+  "testCaseId": "e54f29f980386686561e8dd92572d416",
+  "fullName": "allure_test.TestLogin#test_login_failure_a",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "story",
+      "value": "登录失败"
+    },
+    {
+      "name": "suite",
+      "value": "allure_test"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestLogin"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-NO52HB5"
+    },
+    {
+      "name": "thread",
+      "value": "23940-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "allure_test"
+    }
+  ]
+}
