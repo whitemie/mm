@@ -10,5 +10,6 @@ def get_data(fnpath):
         aedatas = datas["add"]["myexceptdatas"]
         dndatas = datas["div"]["mynormaldata"]
         dedatas = datas["div"]["myexceptdata"]
-
-        return [andatas, anids, aedatas, dndatas, dedatas]
+        sdatas = datas["sub"]
+        mdatas = datas["mul"]
+        return [andatas, anids, aedatas, dndatas, dedatas, sdatas, mdatas]

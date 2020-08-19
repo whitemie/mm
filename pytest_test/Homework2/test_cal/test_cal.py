@@ -3,11 +3,13 @@ import sys
 import os
 
 sys.path.append("..")
-from pytest_test.Homework.Cal.Calculator import Calculator
-from pytest_test.Homework.testdata.test_data import get_data
+from pytest_test.Homework2.Cal.Calculator import Calculator
+from pytest_test.Homework2.testdata.test_data import get_data
 
+print(os.getcwd())
+# fnpath = r'..\testdata\data.yaml'
+fnpath = os.path.dirname(__file__) + "/../testdata/data.yaml"
 
-fnpath = r'..\testdata\data.yaml'
 
 class TestCase:
     def setup_class(self):
@@ -15,17 +17,13 @@ class TestCase:
         # self.mydatas = get_data()[0]
         # self.myids = get_data()[1]
 
-    def setup(self):
-        print("**********开始计算**********")
-
-    def teardown(self):
-        print("**********计算结束**********")
-
+    @pytest.mark.run(order=1)
     @pytest.mark.parametrize("a,b,expect", get_data(fnpath)[0], ids=get_data(fnpath)[1])
-    def test_add(self, a, b, expect):
+    def test_add(self, a, b, expect, printinfo):
         result = self.calc.add(a, b)
         assert result == expect
 
+    @pytest.mark.run(order=2)
     @pytest.mark.parametrize("a,b", get_data(fnpath)[2])
     def test_addexcept(self, a, b):
         try:
@@ -34,11 +32,13 @@ class TestCase:
             print(e.args)
             assert e.args
 
+    @pytest.mark.run(order=5)
     @pytest.mark.parametrize("a,b,expect", get_data(fnpath)[3])
     def test_div(self, a, b, expect):
         result = self.calc.div(a, b)
         assert result == expect
 
+    @pytest.mark.run(order=5)
     @pytest.mark.parametrize("a,b", get_data(fnpath)[4])
     def test_divexcept(self, a, b):
         try:
@@ -46,3 +46,15 @@ class TestCase:
         except Exception as e:
             print(e.args)
             assert e.args
+
+    @pytest.mark.run(order=3)
+    @pytest.mark.parametrize("a,b,expect", get_data(fnpath)[5])
+    def test_sub(self, a, b, expect):
+        result = self.calc.sub(a, b)
+        assert result == expect
+
+    @pytest.mark.run(order=4)
+    @pytest.mark.parametrize("a,b,expect", get_data(fnpath)[6])
+    def test_mul(self, a, b, expect):
+        result = self.calc.mul(a, b)
+        assert result == expect
