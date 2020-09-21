@@ -15,4 +15,4 @@ class Test_case:
         BasePage().base_quit()
 
     def test_(self):
-        self.login.goto_main()
+        self.login.goto_main().goto_phonelist().goto_adddepartment().addde()
