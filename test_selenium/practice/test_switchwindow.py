@@ -2,7 +2,7 @@ import os
 import time
 
 import pytest
-from test_selenium import webdriver
+from selenium import webdriver
 
 
 class Test_window:
