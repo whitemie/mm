@@ -1,6 +1,6 @@
 import shelve
 
-from selenium import webdriver
+from test_selenium import webdriver
 from time import sleep
 
 

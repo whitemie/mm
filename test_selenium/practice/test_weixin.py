@@ -2,7 +2,7 @@ import shelve
 import time
 
 import pytest
-from selenium import webdriver
+from test_selenium import webdriver
 
 
 class Test_weixin:

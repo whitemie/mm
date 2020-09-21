@@ -1,8 +1,8 @@
 import time
 
 import pytest
-from selenium import webdriver
-from selenium.webdriver import ActionChains
+from test_selenium import webdriver
+from test_selenium.webdriver import ActionChains
 
 
 class Test_File:
