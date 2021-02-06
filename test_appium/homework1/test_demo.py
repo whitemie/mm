@@ -1,6 +1,7 @@
 from time import sleep
 
 from appium import webdriver
+from appium.webdriver.common.mobileby import MobileBy
 from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
@@ -20,6 +21,33 @@ class Testdemo:
         }
         self.driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
         self.driver.implicitly_wait(20)
+
+    def test_addmember(self):
+        sex = "女"
+        self.driver.find_element_by_xpath("//*[@text='通讯录']").click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector()'
+                                                               '.scrollable(true).instance(0))'
+                                                               '.scrollIntoView('
+                                                               'new UiSelector().text("添加成员").instance(0));').click()
+        self.driver.find_element(By.XPATH, "//*[@text='手动输入添加']").click()
+        input_path = self.driver.find_element(By.XPATH,
+                                              "//*[@resource-id='com.tencent.wework:id/igz']/android.widget.LinearLayout[2]"
+                                              "//android.widget.TextView")
+        path_text = input_path.text
+        if path_text == "完整输入":
+            input_path.click()
+
+        self.driver.find_element(By.XPATH, '//*[contains(@text,"姓名")]/../android.widget.EditText').send_keys("测试测试")
+        self.driver.find_element(By.XPATH, '//*[contains(@text,"男")]').click()
+        self.driver.find_element(By.XPATH, f'//*[contains(@text,"{sex}")]').click()
+        self.driver.find_element(By.XPATH, '//*[contains(@text,"手机号")]').send_keys("13756882378")
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector()'
+                                                               '.scrollable(true).instance(0))'
+                                                               '.scrollIntoView('
+                                                               'new UiSelector().text("保存").instance(0));').click()
+
+
+
 
     def teardown(self):
         pass
@@ -57,3 +85,4 @@ class Testdemo:
         self.driver.find_element_by_xpath('//*[@text="删除成员"]').click()
         self.driver.find_element_by_xpath('//*[@text="确定"]').click()
         assert "删除成功"
+
